@@ -2,16 +2,19 @@
   <head>
     <title>MQTT Web Client</title>
   </head>
-  <div class="ml-10">
-    <h1 class="text-xl">MQTT Web Client</h1>
-    <div>
-      <connection-card class="m-2" />
+
+  <div class="ml-8 mb-8">
+    <div class="px-6 py-4">
+      <div class="font-bold text-xl mb-2">MQTT Web Client</div>
     </div>
     <div>
-      <subscriptions-card class="m-2" />
+      <connection-card />
     </div>
     <div>
-      <messages-card class="m-2" />
+      <subscriptions-card />
+    </div>
+    <div>
+      <messages-card />
     </div>
   </div>
 </template>

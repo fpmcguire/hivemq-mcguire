@@ -1,6 +1,8 @@
 <template>
-  <div class="ml-10">
-    <h1 class="text-sm">Subscription List</h1>
+  <div>
+    <ul>
+      <li class="text-sm">Subscription List</li>
+    </ul>
   </div>
 </template>
 
