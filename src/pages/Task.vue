@@ -1,4 +1,7 @@
 <template>
+  <head>
+    <title>Task</title>
+  </head>
   <div class="ml-10">
     <h1 class="text-xl">Take Home Assignment</h1>
     <div class="ml-10">

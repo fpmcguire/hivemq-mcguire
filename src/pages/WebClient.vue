@@ -1,4 +1,7 @@
 <template>
+  <head>
+    <title>MQTT Web Client</title>
+  </head>
   <div class="ml-10">
     <h1 class="text-xl">MQTT Web Client</h1>
     <div>
