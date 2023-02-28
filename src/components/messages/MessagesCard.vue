@@ -1,6 +1,6 @@
 <template>
-  <div class="max-w-sm rounded overflow-hidden shadow-lg">
-    <div class="px-6 py-4">
+  <div class="rounded overflow-hidden shadow-lg">
+    <div class="px-4 py-4">
       <div class="font-bold text-xl mb-2">Messages</div>
     </div>
     <form class="ml-4 mr-4 mb-4" action="">

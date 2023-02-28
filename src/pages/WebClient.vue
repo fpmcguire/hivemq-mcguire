@@ -1,20 +1,20 @@
 <template>
-  <head>
-    <title>MQTT Web Client</title>
-  </head>
-
-  <div class="ml-8 mb-8">
-    <div class="px-6 py-4">
+  <div>
+    <div class="px-6">
       <div class="font-bold text-xl mb-2">MQTT Web Client</div>
     </div>
-    <div>
-      <connection-card />
-    </div>
-    <div>
-      <subscriptions-card />
-    </div>
-    <div>
-      <messages-card />
+    <div class="flex flex-row flex-wrap p-4">
+      <div class="flex flex-row flex-wrap">
+        <div class="w-96">
+          <connection-card />
+        </div>
+        <div class="w-96">
+          <subscriptions-card />
+        </div>
+      </div>
+      <div class="w-96">
+        <messages-card />
+      </div>
     </div>
   </div>
 </template>

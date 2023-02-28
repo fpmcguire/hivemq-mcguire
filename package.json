@@ -14,8 +14,8 @@
   "dependencies": {
     "@vueuse/nuxt": "^9.13.0",
     "daisyui": "^2.50.2",
-    "mqtt": "^4.3.7",
-    "uuid": "^9.0.0"
+    "guid-typescript": "^1.0.9",
+    "mqtt": "^4.3.7"
   },
   "devDependencies": {
     "@nuxt/test-utils": "^3.2.2",

@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-sm rounded overflow-hidden shadow-lg">
+  <div class="rounded overflow-hidden shadow-lg">
     <div class="px-4 py-4">
       <div class="font-bold text-xl mb-2">Connection</div>
     </div>
