@@ -77,47 +77,29 @@ import { ConnectionConfig } from "../models/mqtt.model";
 import { Guid } from "guid-typescript";
 
 const connectionConfig: ConnectionConfig = reactive({
-  clientId: Guid.create().toString(),
-  protocol: "wss",
-  hostname: "f4323ea30a9c43f0adfd8768b7298326.s2.eu.hivemq.cloud",
-  protocolVersion: 4,
+  /// EMQX
   port: 8884,
-  path: "/mqtt",
-  clean: true,
-  resubscribe: false,
-  keepalive: 60,
-  connectTimeout: 30 * 1000, // ms
-  reconnectPeriod: 0,
+  hostname: "broker.emqx.io",
+  username: "emqx_test",
+  password: "emqx_test",
+
+  /* 
+  /// HiveMQ
+  port: 8884,
+  hostname: "f4323ea30a9c43f0adfd8768b7298326.s2.eu.hivemq.cloud",
   username: "admin",
   password: "password",
+  */
 
-  /*  clientId: Guid.create().toString(),
+  clientId: Guid.create().toString(),
   protocol: "wss",
-  hostname: "broker.emqx.io",
   protocolVersion: 4,
-  port: 8084,
   path: "/mqtt",
   clean: true,
   resubscribe: false,
   keepalive: 60,
   connectTimeout: 30 * 1000, // ms
   reconnectPeriod: 0,
-  username: "emqx_test",
-  password: "emqx_test", */
-
-  /*  protocol: "ws",
-  host: "broker.emqx.io",
-  // ws: 8083; wss: 8084
-  port: 8083,
-  endpoint: "/mqtt",
-  // for more options, please refer to https://github.com/mqttjs/MQTT.js#mqttclientstreambuilder-options
-  clean: true,
-  connectTimeout: 30 * 1000, // ms
-  reconnectPeriod: 4000, // ms
-  clientId: "emqx_vue3_" + Math.random().toString(16).substring(2, 8),
-  // auth
-  username: "emqx_test",
-  password: "emqx_test", */
 });
 
 const subscription = ref({
