@@ -77,9 +77,9 @@ import { ConnectionConfig } from "../models/mqtt.model";
 import { Guid } from "guid-typescript";
 
 const connectionConfig: ConnectionConfig = reactive({
-  /* clientId: Guid.create().toString(),
+  clientId: Guid.create().toString(),
   protocol: "wss",
-  hostname: "s2.eu.hivemq.cloud",
+  hostname: "f4323ea30a9c43f0adfd8768b7298326.s2.eu.hivemq.cloud",
   protocolVersion: 4,
   port: 8884,
   path: "/mqtt",
@@ -88,14 +88,14 @@ const connectionConfig: ConnectionConfig = reactive({
   keepalive: 60,
   connectTimeout: 30 * 1000, // ms
   reconnectPeriod: 0,
-  username: "fpmcguire",
-  password: "Gr51Ease68!", */
+  username: "admin",
+  password: "password",
 
-  clientId: Guid.create().toString(),
-  protocol: "ws",
+  /*  clientId: Guid.create().toString(),
+  protocol: "wss",
   hostname: "broker.emqx.io",
   protocolVersion: 4,
-  port: 8083,
+  port: 8084,
   path: "/mqtt",
   clean: true,
   resubscribe: false,
@@ -103,7 +103,7 @@ const connectionConfig: ConnectionConfig = reactive({
   connectTimeout: 30 * 1000, // ms
   reconnectPeriod: 0,
   username: "emqx_test",
-  password: "emqx_test",
+  password: "emqx_test", */
 
   /*  protocol: "ws",
   host: "broker.emqx.io",
