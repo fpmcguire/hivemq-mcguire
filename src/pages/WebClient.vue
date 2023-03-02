@@ -78,19 +78,17 @@ import { Guid } from "guid-typescript";
 
 const connectionConfig: ConnectionConfig = reactive({
   /// EMQX
-  port: 8884,
+  port: 8084,
   hostname: "broker.emqx.io",
   username: "emqx_test",
   password: "emqx_test",
 
-  /* 
   /// HiveMQ
-  port: 8884,
+  /*   port: 8884,
   hostname: "f4323ea30a9c43f0adfd8768b7298326.s2.eu.hivemq.cloud",
   username: "admin",
   password: "password",
-  */
-
+ */
   clientId: Guid.create().toString(),
   protocol: "wss",
   protocolVersion: 4,
@@ -103,12 +101,12 @@ const connectionConfig: ConnectionConfig = reactive({
 });
 
 const subscription = ref({
-  topic: "topic/mqttx",
+  topic: "browser",
   qos: 0 as mqtt.QoS,
 });
 
 const publish = ref({
-  topic: "topic/browser",
+  topic: "browser",
   qos: 0 as mqtt.QoS,
   payload: '{ "msg": "Hello, I am browser from Nuxt." }',
 });
